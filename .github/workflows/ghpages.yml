@@ -15,6 +15,11 @@ jobs:
       uses: actions/setup-node@v1.4.2
       with:
         node-version: 12.x
+
+    - name: Install Angular 
+      run: | 
+        npm install -g @angular/cli@8.1.2
+        ng version
        
     - name: Install dependencies
       run: |
