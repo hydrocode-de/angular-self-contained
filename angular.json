@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "self-contained": {
+    "angular-self-contained": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/self-contained",
+            "outputPath": "dist/angular-self-contained",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -63,18 +63,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "self-contained:build"
+            "browserTarget": "angular-self-contained:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "self-contained:build:production"
+              "browserTarget": "angular-self-contained:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "self-contained:build"
+            "browserTarget": "angular-self-contained:build"
           }
         },
         "test": {
@@ -112,16 +112,16 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "self-contained:serve"
+            "devServerTarget": "angular-self-contained:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "self-contained:serve:production"
+              "devServerTarget": "angular-self-contained:serve:production"
             }
           }
         }
       }
     }
   },
-  "defaultProject": "self-contained"
+  "defaultProject": "angular-self-contained"
 }
