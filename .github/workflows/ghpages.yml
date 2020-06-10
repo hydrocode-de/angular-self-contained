@@ -24,6 +24,7 @@ jobs:
         npm i
         ng build --prod --base-href /angular-self-contained/
         touch ./dist/angular-self-contained/.nojekyll
+        cp ./dist/angular-self-contained/index.html ./dist/angular-self-contained/404.html
         
     - name: Deploy to Github Pages
       uses: crazy-max/ghaction-github-pages@v2.0.1
