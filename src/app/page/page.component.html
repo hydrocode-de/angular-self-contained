@@ -1,0 +1,31 @@
+<!-- START OF A HEADER MODULE-->
+<mat-toolbar>
+    <span>Header Module</span>
+
+    <button mat-button [matMenuTriggerFor]="menu1">Awesome Menu</button>
+    <mat-menu #menu1="matMenu">
+        <button mat-menu-item>Link 1</button>
+        <button mat-menu-item>Link 2</button>
+        <button mat-menu-item>Link 3</button>
+    </mat-menu>
+    <button mat-button [matMenuTriggerFor]="menu2">Another Menu</button>
+    <mat-menu #menu2="matMenu">
+        <button mat-menu-item>Link 1</button>
+        <button mat-menu-item>Link 2</button>
+        <button mat-menu-item>Link 3</button>
+    </mat-menu>
+</mat-toolbar>
+<!-- END OF HEADER-->
+
+<!-- 
+    Usually you would split this even further to have a Layout module
+    that actually arreanges the side-drawer, top menu handles responsiveness
+    and so on. I just left that out here
+-->
+
+<!-- START OF ROUTER -->
+<div class='page'>
+    <i style="font-size: 'footnotesize';">Grey box renderes the pages</i>
+    <router-outlet></router-outlet>
+</div>
+<!-- END OF ROUTER -->

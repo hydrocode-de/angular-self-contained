@@ -1,0 +1,11 @@
+<button *ngIf="!expanded" mat-button color="primary" (click)="expanded=!expanded">EMBED</button>
+
+<div *ngIf="expanded" class="embed">
+    To embed this Widget copy the HTML code from below:
+    <pre><code>
+        {{ embedContent }}
+    </code></pre>
+    The raw url for this Widget is: <br>
+    <a [href]="link" target="_blank">{{ link }}</a><br>
+    <button mat-button color="warn" (click)="expanded=!expanded">CLOSE</button>
+</div>

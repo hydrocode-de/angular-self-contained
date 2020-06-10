@@ -1,0 +1,9 @@
+// here you can make the page container responsive with media queries
+.page {
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 1px solid grey;
+    // header has 64px but I need 66 because of the border itself, and 1px added for visual reasons
+    height: calc(100% - 67px);
+}
