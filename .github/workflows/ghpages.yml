@@ -17,9 +17,7 @@ jobs:
         node-version: 12.x
 
     - name: Install Angular 
-      run: | 
-        npm install -g @angular/cli@8.1.2
-        ng version
+      run: npm install -g @angular/cli@8.1.2
        
     - name: Install dependencies
       run: |
