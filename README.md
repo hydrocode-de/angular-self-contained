@@ -1,5 +1,7 @@
 # SelfContained
 
+![Githug-pages](https://github.com/hydrocode-de/angular-self-contained/workflows/Githug-pages/badge.svg)
+
 ![a hydrocode application](https://firebasestorage.googleapis.com/v0/b/hydrocode-website.appspot.com/o/public%2Fhydrocode_brand.png?alt=media&token=3ec35465-9c1c-48a1-8d3f-2c93549a4ffb)
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.1.2.
@@ -8,7 +10,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## About
+## About the project
 
 This is the basic scaffolding needed to run a single page application that is build from self-contained `Components`.
 The idea is that a number of elements on the website can be embedded into other websites (like YouTube videos). 
